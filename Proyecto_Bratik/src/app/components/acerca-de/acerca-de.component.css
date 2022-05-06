@@ -1,0 +1,37 @@
+div{
+    background-color: rgb(48,144,240);
+    text-align: left;
+}
+
+/*Estilo foto de perfil*/
+@media (min-width: 576px){
+    #imagenperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        /*usar left right or center para ubicar la foto */
+        /*usar top para subir la foto*/
+    }
+}
+
+@media (min-width: 575px){
+    #imagenperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px grey;
+        /*usar left right or center para ubicar la foto */
+        /*usar top para subir la foto*/
+    }
+}
+
+/*etiqueta nombre*/
+#nombre{
+    font-weight: bold;
+    margin-bottom: 50%;
+}
+/*etiqueta de foto de perfil*/
+#imagenperfil{
+
+}
