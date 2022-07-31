@@ -9,7 +9,9 @@ div{
         position: absolute;
         width: 15%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px grey;
+        left: 1%;
+        top: 575px;
+
         /*usar left right or center para ubicar la foto */
         /*usar top para subir la foto*/
     }
@@ -20,7 +22,7 @@ div{
         position: absolute;
         width: 15%;
         border-radius: 100%;
-        box-shadow: 3px 3px 3px grey;
+        
         /*usar left right or center para ubicar la foto */
         /*usar top para subir la foto*/
     }
@@ -32,6 +34,3 @@ div{
     margin-bottom: 50%;
 }
 /*etiqueta de foto de perfil*/
-#imagenperfil{
-
-}

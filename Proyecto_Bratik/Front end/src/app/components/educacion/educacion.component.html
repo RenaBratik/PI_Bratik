@@ -1,25 +1,33 @@
-<h1>Formación Académica</h1>
 <div class="row">
-    <div class="col-lg-11">
-        <ul>
-            <li>
-                <h1> Educacion 1</h1> - <h3>(years)</h3>
-            </li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam facilis ad pariatur laudantium porro aliquid voluptates distinctio cum, alias magni nesciunt, modi veritatis aut iusto optio at perferendis doloribus.</p>
-        </ul>
-        <ul>
-            <li>
-                <h1> Educacion 2</h1> - <h3>(years)</h3>
-            </li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam facilis ad pariatur laudantium porro aliquid voluptates distinctio cum, alias magni nesciunt, modi veritatis aut iusto optio at perferendis doloribus.</p>
-        </ul>
-        <ul>
-            <li>
-                <h1> Educacion 3</h1> - <h3>(years)</h3>
-            </li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ullam facilis ad pariatur laudantium porro aliquid voluptates distinctio cum, alias magni nesciunt, modi veritatis aut iusto optio at perferendis doloribus.</p>
-        </ul>
+    <h1>Educacion</h1>
+    <div class=col-lg-2>
+        <button type="button" class="btn btn-outline-light" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
 
+        </button>
     </div>
+
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h6>{{Educacion.nombreE}}</h6>
+
+                    </td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}"><i class="bi bi-pencil-fill"></i>Editar</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" (click)="delete(Educacion.id)"><i class="bi bi-trash3-fill"></i>Borrar</button>
+                    </td>
+                </tr>
+            </tbody>
+    
+        </table>  
+    </div>
+
 </div>
-/* agregar los iconos de cada instituto academico*/ 
